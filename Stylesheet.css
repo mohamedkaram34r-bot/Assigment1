@@ -1,0 +1,41 @@
+/* Shared design for Home, About and Contact. */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: rgb(59, 46, 33);
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header { padding: 24px 16px; border-bottom: 1px solid #847361; }
+h1 { color: rgb(0, 255, 255); width: 100%; text-align: center; margin: 0 0 16px; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+nav a { color: aliceblue; padding: 8px 16px; border-radius: 4px; text-decoration: none; }
+nav a:hover, nav a[aria-current="page"] { background: #00ffff; color: #241b14; }
+main { max-width: 900px; margin: 32px auto; padding: 0 24px; }
+h2, h3 { color: #00ffff; }
+article { margin-bottom: 24px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #a99885; padding: 10px; text-align: left; }
+footer { text-align: center; padding: 20px; border-top: 1px solid #847361; }
+
+/* Contact form. */
+.contact-page { max-width: 720px; }
+.field { margin-bottom: 20px; }
+.field > label { display: block; margin-bottom: 6px; font-weight: bold; }
+input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+    width: 100%; padding: 10px; font: inherit;
+    color: #241b14; background: #fff;
+    border: 1px solid #a99885; border-radius: 4px;
+}
+textarea { resize: vertical; }
+fieldset { margin: 0 0 20px; padding: 14px; border: 1px solid #a99885; border-radius: 4px; }
+legend { font-weight: bold; }
+.option { display: block; margin: 8px 0; }
+input[type="radio"], input[type="checkbox"] { accent-color: #00ffff; }
+button { padding: 12px 24px; border: 0; border-radius: 4px; background: #00ffff; color: #241b14; font: inherit; font-weight: bold; cursor: pointer; }
+button:hover { background: #a6ffff; }
+:focus-visible { outline: 3px solid #ffc76b; outline-offset: 3px; }
+#form-status { font-weight: bold; }
